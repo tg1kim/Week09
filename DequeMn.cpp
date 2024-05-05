@@ -11,29 +11,29 @@ void main()
 		if (value < -2)
 			break;
 		else if (value == -2) {
-			if (???)
+			if (pDeque->Yield(value) == false)
 				Error("empty");
 			else
 				printf("%d is deleted(양보)\n", value);
 		}
 		else if (value == -1) {
-			if (???)
+			if (pDeque->Delete(value) == false)
 				Error("empty");
 			else
 				printf("%d is deleted(삭제)\n", value);
 		}
 		else if (value < 1000) {
-			if (???)
+			if (pDeque->Add(value) == false)
 				Error("full");
 			else
 				printf("%d is inserted(삽입)\n", value);
 		}
 		else {
-			if (???)
+			if (pDeque->JumpIn(value %= 1000) == false)
 				Error("full");
 			else
 				printf("%d is inserted(새치기)\n", value);
 		}
-		???
+		pDeque->Print();
 	}
 }
